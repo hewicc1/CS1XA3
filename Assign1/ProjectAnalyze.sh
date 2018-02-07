@@ -4,6 +4,7 @@
 
 # Informs you if you're local repo is up to date with the remote repo (Hint: theres already a git command to do this, just find it)
 
+#git fetch
 
 
 # Puts all uncommited changes in a file changes.log (Hint: just redirect the output of a certain git command)
@@ -13,7 +14,7 @@
 
 # Puts each line from every file of your project with the tag #TODO into a file todo.log
 
-
+git grep "#TODO" > todo.log
 
 
 # Checks all haskell files for syntax errors and puts the results into error.log (Hint: ghc -fno-code file.hs)

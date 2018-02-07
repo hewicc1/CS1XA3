@@ -1,0 +1,2 @@
+ProjectAnalyze.sh:# Puts each line from every file of your project with the tag #TODO into a file todo.log
+ProjectAnalyze.sh:git grep "#TODO" > todo.log
