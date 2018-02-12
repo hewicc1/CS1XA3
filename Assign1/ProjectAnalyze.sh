@@ -4,7 +4,7 @@
 
 # Informs you if you're local repo is up to date with the remote repo (Hint: theres already a git command to do this, just find it)
 
-#git fetch?
+git fetch --dry-run
 
 
 # Puts all uncommited changes in a file changes.log (Hint: just redirect the output of a certain git command)
@@ -19,7 +19,7 @@ git grep "#TODO" > todo.log
 
 # Checks all haskell files for syntax errors and puts the results into error.log (Hint: ghc -fno-code file.hs)
 
-find . -name "*?.hs" | xargs -I {} ghc -fno-code "{}" > error.log
+#find . -name "*?.hs" | xargs -I {} ghc -fno-code "{}" > error.log
 
 
 # Add at least one feature of your own design
