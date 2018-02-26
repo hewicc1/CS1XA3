@@ -7,7 +7,7 @@
 
 # Informs you if you're local repo is up to date with the remote repo (Hint: theres already a git command to do this, just find it)
 function up_to_date() { # corresponds to requirement #1 in readme.md
-git status > tmp.txt
+git status
 
 } 
 
@@ -30,8 +30,8 @@ echo "Created todo.log"
 
 # Checks all haskell files for syntax errors and puts the results into error.log (Hint: ghc -fno-code file.hs)
 function haskell_errors() {
-
-echo hi
+find . -name "*.hs" | xargs -I {} ghc -fno-code "{}" &>> error.log
+echo "Created error.log" 
 }
 
 

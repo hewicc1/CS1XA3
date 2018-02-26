@@ -18,10 +18,10 @@ Create a bash script ProjectAnalyze.sh to keep at the root of your git repo that
 #### up_to_date
 
 #### uncommited_changes
-Corresponds to requirement #2. \n
+Corresponds to requirement #2.
 Creates changes.log and redirects the output of the git diff with the --staged flag to show all the differences in the added files only.
 #### todo
-Corresponds to requirement #3. \n
+Corresponds to requirement #3.
 Creates todo.log then appends total numbers of "#TODO's" using the git grep --count flag then appends every instance using git grep with no flags.
 #### haskell_errors
 
