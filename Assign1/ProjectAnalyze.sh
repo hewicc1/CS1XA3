@@ -6,20 +6,20 @@
 #Functions:
 
 # Informs you if you're local repo is up to date with the remote repo (Hint: theres already a git command to do this, just find it)
-up_to_date() { # corresponds to requirement #1 in readme.md
-echo hi
-#git diff --staged
+function up_to_date() { # corresponds to requirement #1 in readme.md
+git status > tmp.txt
+
 } 
 
 # Puts all uncommited changes in a file changes.log (Hint: just redirect the output of a certain git command)
-uncommited_changes() { #corresponds to requirement #2 in readme.md
-git status > changes.log
-git diff > changes2.log
+function uncommited_changes() { #corresponds to requirement #2 in readme.md
+git diff --staged > changes.log # uses the --staged flag to singal differences in only staged files
+echo "Created changes.log"
 }
 
 
 # Puts each line from every file of your project with the tag #TODO into a file todo.log
-todo() { # corresponds to requirement #3 in readme.md
+function todo() { # corresponds to requirement #3 in readme.md
 echo "Total "#TODO"'s Found:" > todo.log
 git grep --count "#TODO" >> todo.log # shows total number of #TODO's in the files
 echo "" >> todo.log
@@ -29,9 +29,8 @@ echo "Created todo.log"
 }
 
 # Checks all haskell files for syntax errors and puts the results into error.log (Hint: ghc -fno-code file.hs)
-haskell_errors() {
-#find . -name "*?.hs" | xargs -I {} ghc -fno-code "{}" > error.log
-#ghc -fno-code *?.hs > error.log
+function haskell_errors() {
+
 echo hi
 }
 

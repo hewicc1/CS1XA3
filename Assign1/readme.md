@@ -1,6 +1,6 @@
 # CS 1XA3 Assignment #1: ProjectAnalyze.sh
 ## Goal:
-Create a bash script ProjectAnalyze.sh to kepp at the root of your git repo that at least the following functionality:
+Create a bash script ProjectAnalyze.sh to keep at the root of your git repo that at least the following functionality:
 ### Requirements:
 1. Informs you if your local repo is up to date with the remote repo
 2. Puts all uncommited changes in a file changes.log
@@ -18,9 +18,10 @@ Create a bash script ProjectAnalyze.sh to kepp at the root of your git repo that
 #### up_to_date
 
 #### uncommited_changes
-
+Corresponds to requirement #2. \n
+Creates changes.log and redirects the output of the git diff with the --staged flag to show all the differences in the added files only.
 #### todo
-Corresponds to requirement #3
+Corresponds to requirement #3. \n
 Creates todo.log then appends total numbers of "#TODO's" using the git grep --count flag then appends every instance using git grep with no flags.
 #### haskell_errors
 
