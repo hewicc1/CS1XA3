@@ -4,7 +4,7 @@
 
 # Informs you if you're local repo is up to date with the remote repo (Hint: theres already a git command to do this, just find it)
 
-git fetch --dry-run
+git diff --staged
 
 
 # Puts all uncommited changes in a file changes.log (Hint: just redirect the output of a certain git command)
