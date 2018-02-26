@@ -20,7 +20,8 @@ Create a bash script ProjectAnalyze.sh to kepp at the root of your git repo that
 #### uncommited_changes
 
 #### todo
-
+Corresponds to requirement #3
+Creates todo.log then appends total numbers of "#TODO's" using the git grep --count flag then appends every instance using git grep with no flags.
 #### haskell_errors
 
 ### Citations:
