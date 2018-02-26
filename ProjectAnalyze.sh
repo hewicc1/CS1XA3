@@ -31,7 +31,7 @@ echo "Created todo.log"
 # Checks all haskell files for syntax errors and puts the results into error.log (Hint: ghc -fno-code file.hs)
 function haskell_errors() { # corresponds to requirement #4 in readme.md
 find . -name "*.hs" | xargs -I {} ghc -fno-code "{}" &> error.log # redirects the output from stdout and stderr to error.log
-sed -i '/The IO action ‘main’ is not defined in module ‘Main’/d' ./error.log
+sed -i '/The IO action ‘main’ is not defined in module ‘Main’/d' ./error.log # removes all errors that are about an undefined Main module
 echo "Created error.log" 
 }
 

@@ -27,6 +27,7 @@ Creates todo.log then appends total numbers of "#TODO's" using the git grep --co
 #### haskell_errors
 Corresponds to requirement #4.
 Creates error.log that contains the stdout and stderr of checking the Haskell code for syntax errors.
+Then removes all errors that are having an undefined Main module.
 #### size_summary
 Corresponds to additional feature #1.
 First displays the total size of the repo to size.log then appends the size of individual human-readable files excluding hidden files.
