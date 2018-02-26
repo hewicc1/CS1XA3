@@ -25,4 +25,4 @@ Creates todo.log then appends total numbers of "#TODO's" using the git grep --co
 #### haskell_errors
 
 ### Citations:
-test.com
+* idea of starting prompt from classmate Noa Barsky at https://github.com/barskyn/CS1XA3/blob/master/Assign1/ProjectAnalyze.sh

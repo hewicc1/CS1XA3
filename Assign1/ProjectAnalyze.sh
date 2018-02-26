@@ -2,9 +2,13 @@
 
 # CS 1XA3 Assignment #1: ProjectAnalyze
 
+
+#Functions:
+
 # Informs you if you're local repo is up to date with the remote repo (Hint: theres already a git command to do this, just find it)
 up_to_date() { # corresponds to requirement #1 in readme.md
-git diff --staged
+echo hi
+#git diff --staged
 } 
 
 # Puts all uncommited changes in a file changes.log (Hint: just redirect the output of a certain git command)
@@ -33,7 +37,15 @@ echo hi
 
 
 
-# Run all Functions:
+# Runs Script:
+# idea of starting prompt comes classmate Noa Barsky @ https://github.com/barskyn/CS1XA3/blob/master/Assign1/ProjectAnalyze.sh
+echo "Would you like to start ProjectAnalyze.sh (y/n)"
+read start
+if [ $start != "y" ]
+then
+	exit
+fi
+
 up_to_date
 uncommited_changes
 todo
