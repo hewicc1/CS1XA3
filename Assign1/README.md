@@ -17,7 +17,10 @@ Create a bash script ProjectAnalyze.sh to keep at the root of your git repo that
 6. Will create size.log that contain a basic summary of the size of the repo and the size of its files
 ### Functions:
 #### up_to_date
-
+Corresponds to requirement #1.
+Uses grep and wc to check the output of git remote show origin (which shows tracked repos from the origin) if 'up to date' is mentioned on one line.
+If 'up to date' is mentioned it means your local repo is up to date with your remote repo.
+If you are not up to date you are then asked if you would like to update your local repo using git pull, then performs git pull based on your answer.
 #### uncommited_changes
 Corresponds to requirement #2.
 Creates changes.log and redirects the output of the git diff with the --staged flag to show all the differences in the added files only.
