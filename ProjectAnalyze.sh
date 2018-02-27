@@ -9,7 +9,18 @@
 
 # Informs you if you're local repo is up to date with the remote repo (Hint: theres already a git command to do this, just find it)
 function up_to_date() { # corresponds to requirement #1 in readme.md
-git status
+if [ $(git remote show origin | grep "up to date" | wc -l) -eq 1 ] # uses grep and wc to see if 'up to date' is mentioned in the output of git remote (manages tracked repos)
+then
+	echo "Your local repo is up to date with your remote repo." # if 'up to date' is found you are up to date
+else
+	echo "Your local repo is not up to date with your remote repo."
+	echo "Would you like you update it using git pull? (y/n)" # if you are not up to date then asks users if he/she wants to perform git pull to update
+	read inp
+	if [ $inp = "y" ] # if responds with 'y' then executes git pull
+	then
+		git pull
+	fi
+fi	
 } 
 
 # Puts all uncommited changes in a file changes.log (Hint: just redirect the output of a certain git command)
