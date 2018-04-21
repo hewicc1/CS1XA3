@@ -1,6 +1,6 @@
 # CS 1XA3 Assignment #3: Haskell Math Library
 ## Documentation:
-[Here](hewicc1.github.uo)
+[Here](https://hewicc1.github.io)
 ## Goal:
 Build a math library in haskell for helping you with your Calculus homework.
 ### Functionality:
